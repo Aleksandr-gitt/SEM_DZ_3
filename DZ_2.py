@@ -9,3 +9,13 @@
 
 # 4 -> 1 2 3 4
 # OUT: 9
+
+n = int(input('Сколько кустов? '))
+sn = [int(input('Урожайность куста? ')) for i in range(n)]
+
+summ = []
+for i in range(n-1):
+    summ.append(sum(sn[i:i+2])+sn[i-1])
+summ.append(sum(sn[-2:])+sn[0]) 
+
+print(max(summ))
