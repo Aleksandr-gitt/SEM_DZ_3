@@ -4,9 +4,15 @@
 # Затем пользователь вводит сами элементы множеств.
 
 # INPUT:
-# 11 6
+
 # 2 4 6 8 10 12 10 8 6 4 2
 # 3 6 9 12 15 18
 #
 # OUT: 6 12
 
+
+
+s1 = set(i for i in input().split())
+s2 = set(i for i in input().split())
+
+print(*(s1&s2))
